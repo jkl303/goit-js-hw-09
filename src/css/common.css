@@ -16,3 +16,22 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {display: flex;
+gap: 10px;}
+
+.field {display: flex;
+flex-direction: column;}
+
+.value {
+  font-size: 50px;
+  height: 70px;
+  color: rgb(0, 87, 183);
+  text-shadow: 2px 2px 2px rgb(255, 215, 0);
+}
+
+.label {
+  font-size: 16px;
+  color: rgb(255, 215, 0);
+  text-shadow: 1px 1px 1px rgb(0, 87, 183);
+}
