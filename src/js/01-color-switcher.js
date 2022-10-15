@@ -9,9 +9,10 @@ function changeBodyColor() {
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+intId = setInterval(changeBodyColor, 1000);
 refs.stopBtn.disabled = true;
 refs.startBtn.addEventListener('click', () => {
-    intId = setInterval(changeBodyColor, 1000);
+    intId;
     refs.startBtn.disabled = true;
     refs.stopBtn.disabled = false;
 });
@@ -20,4 +21,3 @@ refs.stopBtn.addEventListener('click', () => {
     refs.startBtn.disabled = false;
     refs.stopBtn.disabled = true;
 });
-
